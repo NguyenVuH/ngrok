@@ -28,7 +28,7 @@ jobs:
       shell: powershell
       run: |
         $SecurePassword = ConvertTo-SecureString "Nvu11@.com" -AsPlainText -Force
-        Set-LocalUser -Name "Administrator" -Password $SecurePassword
+        Set-LocalUser -Name "runneradmin" -Password $SecurePassword
 
     - name: Create Tunnel
       run: .\ngrok\ngrok.exe tcp 3389
